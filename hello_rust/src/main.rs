@@ -1,12 +1,7 @@
+fn add(a: i32, b: i32) -> i32 {
+    a + b
+}
+
 fn main() {
-
-    let x: i32 = 500;
-
-    // assume i32
-    let mut y = 5; // declaring a mutable
-    y +=1;
-
-    println!("x= {}, y={}", x, y);
-
-
+    println!("1330 + 7 = {}", add(1330, 7));
 }
