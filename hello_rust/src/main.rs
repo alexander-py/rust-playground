@@ -17,9 +17,19 @@
 //     }
 // }
 
+// fn main() {
+//     let s1 = String::from("testing, attention please");
+//     let s2 = s1; // ownership moves
+//     // println!("{}", s1); // let us break it
+//     println!("{}", s2)
+// }
+
+fn print_str(s: &String) {
+    println!("{}", s);
+}
+
 fn main() {
-    let s1 = String::from("testing, attention please");
-    let s2 = s1; // ownership moves
-    // println!("{}", s1); // let us break it
-    println!("{}", s2)
+    let s = String::from("Hi I am Alex");
+    print_str(&s); // borrow instead of move
+    // println!("{}", s);
 }
