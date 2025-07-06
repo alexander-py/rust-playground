@@ -7,12 +7,19 @@
 // }
 
 
+// fn main() {
+//     for i in 0..11 {
+//         if i % 2 == 0 {
+//             println!("is even ---> {}", i)
+//         } else {
+//             println!("is not even ---> {}", i)
+//         }
+//     }
+// }
+
 fn main() {
-    for i in 0..11 {
-        if i % 2 == 0 {
-            println!("is even ---> {}", i)
-        } else {
-            println!("is not even ---> {}", i)
-        }
-    }
+    let s1 = String::from("testing, attention please");
+    let s2 = s1; // ownership moves
+    // println!("{}", s1); // let us break it
+    println!("{}", s2)
 }
